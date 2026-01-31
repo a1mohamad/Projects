@@ -1,7 +1,7 @@
 # Titanic - Machine Learning from Disaster
 ### 🏗️ Predicting Survival with Advanced Feature Engineering & Neural Networks
 
-This repository contains a high-performance solution for the Kaggle Titanic competition. The project moves beyond basic survival models by utilizing an ensemble-based imputation strategy and a deep neural network (DNN) architecture.
+This repository contains a high-performance solution for the [Kaggle Titanic competition](https://www.kaggle.com/competitions/titanic). The project moves beyond basic survival models by utilizing an ensemble-based imputation strategy and a deep neural network (DNN) architecture.
 
 ## 🚀 Project Overview
 The goal of this project is to build a predictive model that accurately determines whether a passenger survived the shipwreck based on data such as age, sex, socio-economic class, and family size.
