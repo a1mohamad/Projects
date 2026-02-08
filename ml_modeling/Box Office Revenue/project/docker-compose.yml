@@ -1,0 +1,25 @@
+
+services:
+  db:
+    image: postgres:16
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: math3141
+      POSTGRES_DB: tmdb
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  app:
+    build: .
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgres://postgres:math3141@db:5432/tmdb
+    ports:
+      - "8000:8000"
+
+volumes:
+  pgdata:
